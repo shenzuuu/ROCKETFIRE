@@ -1,0 +1,145 @@
+<html>
+   <head>
+      <link rel="stylesheet" type"text/css" href="asset/css/style.css">
+      <link href="asset/css/sheet.css" rel="stylesheet" />
+      <link href="asset/css/stylesheet.css" rel="stylesheet" />
+      <link href="asset/css/style.css" rel="stylesheet" />
+
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>others</title>
+   </head>
+   <body>
+	<nav>
+                <div id="navbar">
+                    <img src="asset/image/logo.png" style="float:left">
+                    <a href="index.html">Home</a>
+                    <a href="about us.html">About us</a>
+		    <a href="about logo.html">About Logo</a>
+                    <a href="services.html">Services</a>
+                    <a href="others.html">Others</a>
+                    <a href="contact.html">Contact</a>
+           </nav>
+                  </div>
+
+      <center>
+               <h1>OUR VIDEO CORPORATE</h1>
+            </div>
+
+         <br><br>
+         <div class="container">
+            <div class="video">
+<br><br><br><br>
+               <video width="1000" controls>
+                  <source src="asset/video/VIDEO APPLICATION.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
+            </div>
+            <div class="text">
+            
+            </div>
+         </div>
+         <br><br>
+         <button type="button" class="collapsible">Organizational Chart</button>
+         <div class="content">
+            <br>
+            <img src="asset/image/Organization Chart.png" alt="Organization Chart" style="width:600px;">
+         </div>
+         <br>
+         <button type="button" class="collapsible">Contact Our Team</button>
+         <div class="content">
+         <div class="responsive">
+            <div class="gallery">
+               <a target="_blank" href="asset/image/ellapic.png"> 
+               <img src="asset/image/ellapic.png" alt="ellapic" width="600" height="400">
+               </a>
+               <div class="desc"> Siti Suhaila Bt Sharif
+                  <a href="https://api.whatsapp.com/send?phone=60194071773" target="_blank">
+                     <p>Phone: 019-4071773</p>
+                  </a>
+                  <a href="mailto:sitisuhaila1405@gmail.com" target="_blank">
+                     <p>Email:sitisuhaila1405@gmail.com</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="responsive">
+            <div class="gallery">
+               <a target="_blank" href="asset/image/hawapic.png">
+               <img src="asset/image/hawapic.png" alt="hawapic" width="600" height="400">
+               </a>
+               <div class="desc"> Siti Hawa Humayra Bt Mohd Fahizal
+                  <a href="https://api.whatsapp.com/send?phone=601135026469" target="_blank">
+                     <p>Phone: 011-35026469</p>
+                  </a>
+                  <a href="mailto:humayrahawasiti@gmail.com" target="_blank">
+                     <p>Email:humayrahawasiti@gmail.com</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="responsive">
+            <div class="gallery">
+               <a target="_blank" href="asset/image/hafizpic.png">
+               <img src="asset/image/hafizpic.png" alt="hafizpic" width="600" height="400">
+               </a>
+               <div class="desc"> Muhammad Hafiz Bin Mohd Rafi
+                  <a href="https://api.whatsapp.com/send?phone=601161538600" target="_blank">
+                     <p>Phone: 011-61538600</p>
+                  </a>
+                  <a href="mailto:muhammadhafeez588@gmail.com" target="_blank">
+                     <p>Email:muhammadhafeez588@gmail.com</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="responsive">
+            <div class="gallery">
+               <a target="_blank" href="asset/image/zhafranpic.png">
+               <img src="asset/image/zhafranpic.png" alt="zhafranpic" width="600" height="400">
+               </a>
+               <div class="desc"> Muhammad Zhafran Bin Zauri
+                  <a href="https://api.whatsapp.com/send?phone=601129914823" target="_blank">
+                     <p>Phone: 011-29914823</p>
+                  </a>
+                  <a href="mailto:znafan4336@gmail.com" target="_blank">
+                     <p>Email:znafan4336@gmail.com</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            }
+         </script>
+         <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+         </script>
+   </body>
+</html>

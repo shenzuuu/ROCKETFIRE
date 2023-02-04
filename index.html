@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <link href="asset/css/style.css" rel="stylesheet"/>
+    <link href="asset/css/stylesheet.css" rel="stylesheet"/>
+    <link href="asset/css/sheet.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rocket Fire</title>
+  </head>
+ <style>
+      /* Style the wallpaper welcomepage */
+      body {
+        background-image: url("asset/image/backgroundimage.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+</style>
+
+    <title>Home page</title>
+  </head>
+  <body>
+  <nav>
+                <div id="navbar">
+                    <img src="asset/image/logo.png" style="float:left">
+                    <a href="index.html">Home</a>
+                    <a href="about us.html">About us</a>
+		    <a href="about logo.html">About Logo</a>
+                    <a href="services.html">Services</a>
+                    <a href="others.html">Others</a>
+                    <a href="contact.html">Contact</a>
+           </nav>
+                  </div>
+
+<br><br>
+    <main>
+      <div class="intro">
+        <h1>ROCKET FIRE</h1>
+        <p>Service with care</p>
+      </div>
+
+
+
+      <script>
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+
+<br /><br /><br /><br />
+    <center>
+      <div id="footer">
+        <a href="tel: +601161451473" target="_blank"
+          ><img class="phone" src="asset/image/phone_footer.png"
+        /></a>
+        <a href="https://www.instagram.com/rocketfire__/" target="_blank"
+          ><img class="instagram" src="asset/image/instagram_footer.png"
+        /></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=601161451473"
+          target="_blank"
+          ><img class="whatsapp" src="asset/image/whatsapp_footer.png"
+        /></a>
+
+        <!--Adjusting the copyright information and latest updated of website-->
+        <p style="color:white; font-size: 10px; font-weight: bold; margin-top: 2px">
+          Rocket Fire. &copy Copyright 2023<br />
+          Last Updated on 18 January 2023. All rights reserved.
+        </p>
+      </div>
+    </center>
+
+    </main>
+  </body>
+</html>

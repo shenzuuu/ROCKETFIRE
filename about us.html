@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <link rel="stylesheet" type"text/css" href="asset/css/style.css">
+    <link href="asset/css/sheet.css" rel="stylesheet" />
+    <link href="asset/css/stylesheet.css" rel="stylesheet" />
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+ 
+      /* Style the wallpaper welcomepage */
+      body {
+        background-image: url("asset/image/backgroundimage.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+</style>
+
+  </head>
+  <body>
+
+ <nav>
+                <div id="navbar">
+                    <img src="asset/image/logo.png" style="float:left">
+                    <a href="index.html">Home</a>
+                    <a href="about us.html">About us</a>
+		    <a href="about logo.html">About Logo</a>
+                    <a href="services.html">Services</a>
+                    <a href="others.html">Others</a>
+                    <a href="contact.html">Contact</a>
+           </nav>
+                  </div>
+
+      <title>about us</title>
+ 
+
+    <body>
+
+<br><br><br><br><br>
+      <h2 style="background-color: #000000; opacity: .0.9;"> <marquee class="blink"><h2 style="background-color: black;">We Give The Best For The Users!!</marquee></h2>
+    <br /><br />
+    <center>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="asset/image/logo1.jpeg" width="100%" />
+            </div>
+            <div class="flip-box-back">
+			<br><br>
+                <p>Our company develop a measurement app that has bested all other measurement apps out there by offering multiple and new services to users.</p>           
+             </div>
+          </div>
+        </div>
+      </body>
+   <br><br><br><br>
+    <div class="p">We challenge the standards of configuration, push the limits of advancement. Rocket Fire began in 2022, and we've not looked back rather than consistently discovering, developing & learning from that point forward.
+
+      We have come so far and a lot has occurred in the previous years. We assembled things; we met such a significant number of individuals, made long lasting fellowships, adapted so much and developed in general. It was an uneven ride. Yet a wonderful goal isn't justified regardless of the battle of the voyage. We spend significant time in making ideas digital that are just usable, practical and sufficiently instinctive to improve life.
+      
+      We prevail with regards to conveying quality apps & web services for customers over the world. The unmatched steadiness, diligence and excitement of our developer family has built up a solid establishment for us.
+    </center>
+    </div>
+    <br><br>
+    <center>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="asset/image/comp3.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="asset/image/comp1.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="asset/image/comp2.jpeg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+        </script>
+
+<br /><br /><br /><br />
+    <center>
+      <div id="footer">
+        <a href="tel: +601161451473" target="_blank"
+          ><img class="phone" src="asset/image/phone_footer.png"
+        /></a>
+        <a href="https://www.instagram.com/rocketfire__/" target="_blank"
+          ><img class="instagram" src="asset/image/instagram_footer.png"
+        /></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=601161451473"
+          target="_blank"
+          ><img class="whatsapp" src="asset/image/whatsapp_footer.png"
+        /></a>
+
+        <!--Adjusting the copyright information and latest updated of website-->
+        <p style="color:white; font-size: 10px; font-weight: bold; margin-top: 2px">
+          Rocket Fire. &copy Copyright 2023<br />
+          Last Updated on 18 January 2023. All rights reserved.
+        </p>
+      </div>
+    </center>
+  </body>
+</html>

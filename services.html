@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link rel="stylesheet" type"text/css" href="asset/css/style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+* Style the wallpaper welcomepage */
+        body  
+        {
+          background-image: url("asset/image/backgroundimage.jpg");
+          background-repeat: repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+
+</style>
+
+  </head>
+  <body>
+
+        <header>
+            <nav>
+                <div id="navbar">
+                    <img src="asset/image/logo.png" style="float:left">
+                    <a href="index.html">Home</a>
+                    <a href="about us.html">About us</a>
+		    <a href="about logo.html">About Logo</a>
+                    <a href="services.html">Services</a>
+                    <a href="others.html">Others</a>
+                    <a href="contact.html">Contact</a>
+           </nav>
+                  </div>
+
+    
+    <center>
+      <br><br>
+      <h2><center>SERVICES</center></h2>
+      <br><br>
+      <button class="collapsible">OUR SERVICES</button>
+      <div class="content">
+        <p>WHAT IS OUR APP OFFER?</p>
+        <p>
+          Our app give people the experience about how easy it is to measure our
+          size to choose the right clothes that perfectly fit our body size.
+        </p>
+      </div>
+
+      <p style="color: white;">MORE DETAILS!!</p>
+      <button class="collapsible">MEASURE</button>
+      <div class="content">
+        <ul>
+          <li>Accurately measure body size</li>
+          <li>Easy to use (no need for measure tape)</li>
+          <li>Can generate the users' BMI</li>
+        </ul>
+      </div>
+      <button class="collapsible">CALCULATE BODY STATS</button>
+      <div class="content">
+        <ul>
+          <li>Can calculate body fat percentage</li>
+          <li>Waist to hip ratio</li>
+        </ul>
+      </div>
+      <button class="collapsible">EASY</button>
+      <div class="content">
+        <ul>
+          <li>Use the device camera</li>
+          <li>Save time and money</li>
+          <li>Instant result</li>
+        </ul>
+      </div>
+    </center>
+    <p style="color:white;">
+      The data below show the feedback of our users on how satisfy are they when
+      using our app.
+    </p>
+    <div class="txt">
+      <p style="color:white;">Satisfied</p>
+      <div class="container">
+        <div class="skills satisfied" style= "text-align:center">60%</div>
+      </div>
+
+      <p style="color:white;">Unsatisfied</p>
+      <div class="container">
+        <div class="skills unsatisfied" style= "text-align:center">40%</div>
+      </div>
+    </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+   <br><br><br>
+   
+  </body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  background-image: url("https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+/* CSS for main section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width-right: 50%;
+  width-left: 50%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("file:///D:/IMD311%20ELLA/asset/image/homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clear floats after image containers */
+.row :after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Adjusting the icons width and height */
+.phone {
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+}
+
+.instagram {
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+}
+.whatsapp {
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+}
+/* Adjusting the text that represent the icons */
+p {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
